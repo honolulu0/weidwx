@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1280,
+          "bottomRow": 860,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 71,
+          "version": 77,
           "minHeight": 900,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -656,7 +656,7 @@
                   "boxShadow": "none",
                   "widgetName": "Canvas3",
                   "topRow": 0,
-                  "bottomRow": 230,
+                  "bottomRow": 240,
                   "parentRowSpace": 1,
                   "canExtend": true,
                   "type": "CANVAS_WIDGET",
@@ -840,7 +840,7 @@
                   "boxShadow": "none",
                   "widgetName": "Canvas4",
                   "topRow": 0,
-                  "bottomRow": 1120,
+                  "bottomRow": 1100,
                   "parentRowSpace": 1,
                   "canExtend": true,
                   "type": "CANVAS_WIDGET",
@@ -2585,11 +2585,11 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "data_table.sortOrder.column || 'id'",
-                "data_table.sortOrder.order || 'ASC'",
+                "(data_table.pageNo - 1) * data_table.pageSize",
                 "data_table.pageSize",
                 "data_table.searchText || \"\"",
-                "(data_table.pageNo - 1) * data_table.pageSize"
+                "data_table.sortOrder.column || 'id'",
+                "data_table.sortOrder.order || 'ASC'"
               ],
               "timeoutInMillisecond": 10000
             }
